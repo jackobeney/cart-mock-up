@@ -1,0 +1,32 @@
+<template name="upload">
+
+  <div class="modal" id="upload-model" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Select a file you want to upload</h3>
+        </div>
+
+        <div class="modal-body">
+          <ul class="test-models">
+            {{#each testModels}}
+              <li>
+                <div class="row model model-to-upload">
+                  <div class="col-sm-6 model-name" id="{{_id}}"><i class="fa fa-file-code-o fa-lg"></i> {{name}}</div>
+                </div>
+              </li>
+            {{/each}}
+          </ul>
+        </div>
+
+        <div class="modal-footer">
+          <div class="row">
+            <div class="col-sm-10"><input class="filename" type="text" value="{{modelToUploadName}}"></div>
+            <div class="col-sm-2 add-model"><a href="#upload-model" class="btn btn-primary" id="{{modelToUploadId}}" data-toggle="modal">Open</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</template>

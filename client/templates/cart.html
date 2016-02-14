@@ -1,0 +1,46 @@
+<template name="cart">
+
+  <div class="col-sm-6">
+    <div class="card">
+    <h3 class="card-header">Items In Cart</h3>
+    <hr>
+      <ul class="cart-items">
+        {{#each itemsInCart}}
+          <li>
+            <div class="item row">
+              <div class="col-sm-2 image">
+                <img class="img-square" src="{{image}}">
+              </div>
+
+              <div class="col-sm-6">
+                <div class="model-name">
+                  {{name}}
+                </div>
+                <div class="dimensions">
+                  {{dimensions}} {{unit}}
+                </div>
+              </div>
+
+              <div class="col-sm-3">
+                <label for="quantity">Quantity:</label>
+                <input class="quantity-input" type="number" name="quantity" value="{{quantity}}" data-id="{{_id}}">
+              </div>
+
+              <div class="col-sm-1">
+                <a href="#delete-item" id="item-to-delete" data-toggle="modal"><i class="fa fa-trash-o fa-2x"></i></a>
+              </div>
+            </div>
+            <hr>
+          </li>
+        {{/each}}
+
+        <li>
+          <div class="upload-model">
+            <a href="#upload-model" class="btn btn-primary" data-toggle="modal">Upload Model</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</template>

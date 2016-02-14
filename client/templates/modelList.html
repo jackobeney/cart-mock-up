@@ -1,0 +1,21 @@
+<template name="modelList">
+
+  <div class="col-sm-3 col-sm-offset-1">
+    <div class="card">
+      <h3 class="card-header">Test Models</h3>
+      <hr>
+      <ul class="test-models">
+        {{#each testModels}}
+          <li>
+            <div class="row model">
+              <div class="col-sm-6 model-name">{{name}}</div>
+              <div class="col-sm-6 add-model"><button class="btn btn-primary" id="{{_id}}">Add</button></div>
+            </div>
+            <hr>
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+
+</template>
