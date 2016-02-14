@@ -13,6 +13,8 @@ meteor
 ```
 then navigate to localhost:3000
 
+Additonally you can also view the app here: http://jackobeneycartmockup.meteor.com/
+
 ## Details of Implementation
 
 * There are two collections in the mongo database, one for the test models and one for the models currently in the users cart.
