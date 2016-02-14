@@ -5,15 +5,11 @@
 ### install Meteor
 https://www.meteor.com/install
 
-```
-
 ## Running the app
 
 From the command line, simply run:
 `meteor`
 then navigate to localhost:3000
-
-```
 
 ## Details of Implementation
 
